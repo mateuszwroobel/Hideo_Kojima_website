@@ -178,7 +178,76 @@ footer {
     width: auto;
     object-fit: contain;
 }
+/*respowynosc strony glownej dla mniejszych ekranow*/
+@media (max-width: 900px) {
 
+    .typing-text {
+        font-size: 6vw;
+    }
+
+    .kojima-hero {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 100px 5% 3rem 5%;
+        text-align: center;
+    }
+
+    .kojima-text-container {
+        max-width: 100%;
+        text-align: center;
+        order: 2;
+    }
+
+    .kojima-hero h1 {
+        font-size: 3rem;
+    }
+
+    .kojima-hero p {
+        font-size: 1.1rem;
+    }
+
+    .kojima-image-container {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        order: 1;
+        margin-bottom: 2rem;
+    }
+
+    .game-section {
+        height: auto;
+        padding: 4rem 1.5rem;
+    }
+
+    .game-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .game-content.reversed {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .game-content img {
+        max-width: 100%;
+    }
+
+    .game-text {
+        margin-top: 1.5rem;
+    }
+
+    .game-text h2 {
+        font-size: 2rem;
+    }
+
+    .game-text p {
+        font-size: 1rem;
+        text-align: center !important;
+    }
+}
 
 .game-section {
     height: 500px; 
