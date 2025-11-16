@@ -268,18 +268,23 @@ footer {
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 56.25%; /* To jest 9 / 16 = 0.5625 */
+    padding-top: 56.25%; 
     border-radius: 8px;
-    border: 2px solid var(--accent-color); /* Przenosimy ramkę tutaj */
+    border: 2px solid var(--accent-color);
 }
 
-/* 2. Sam odtwarzacz YouTube, który wypełnia wrapper */
 .video-responsive-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.error-message {
+    color: #D32F2F;
+    font-size: 0.9rem;
+    margin-top: 5px;
 }
 
 .contact-form {

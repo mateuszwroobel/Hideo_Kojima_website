@@ -18,16 +18,18 @@
         <section class="contact-form">
             <h2>Skontaktuj się</h2>
             <p>Masz pytania lub sugestie? Wypełnij formularz poniżej.</p>
-            <form action="#" method="POST"> <div>
+            
+            <form id="formularz-kontaktowy" action="#" method="POST">
+                
+                <div>
                     <label for="email">E-Mail:</label>
                     <input type="text" 
                         id="email" 
                         name="email" 
-                        placeholder="Wpisz swój adres e-mail..." 
-                        required
-                        pattern=".*@.*"
-                        title="Proszę podać poprawny adres e-mail (musi zawierać @)">
+                        placeholder="Wpisz swój adres e-mail...">
+                    <div id="email-error" class="error-message"></div>
                 </div>
+    
                 <div>
                     <label for="temat">Temat wiadomości:</label>
                     <select id="temat" name="temat">
@@ -36,13 +38,17 @@
                         <option value="uwagi_do_strony">Uwagi do strony</option>
                     </select>
                 </div>
+    
                 <div>
                     <label for="wiadomosc">Wiadomość:</label>
-                    <textarea id="wiadomosc" name="wiadomosc" rows="6" placeholder="Treść Twojej wiadomości..." required></textarea>
+                    <textarea id="wiadomosc" name="wiadomosc" rows="6" placeholder="Treść Twojej wiadomości..."></textarea>
+                    <div id="wiadomosc-error" class="error-message"></div>
                 </div>
+    
                 <div>
                     <input type="submit" value="Wyślij">
                 </div>
+    
             </form>
         </section>
     </main>
@@ -50,6 +56,6 @@
     <footer>
         <p>Mateusz Wróbel</p>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
